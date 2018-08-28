@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp">
+        <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+            android:id="@+id/iv_finemenupicture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:siShape="@drawable/shape_rounded_rectangle"
+            android:src="@drawable/test_main_01"
+            android:scaleType="fitXY"
+            android:alpha="0.5" />
+        <!--app:siSquare="true"自动成比例-->
+        <TextView
+            android:id="@+id/tx_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="三明治也能吃出独有的滋味"
+            android:textColor="@color/main_blacktext"
+            android:textSize="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp" />
+        <TextView
+            android:id="@+id/tx_cate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="好吃的菜"
+            android:textColor="@color/main_blacktext"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp"/>
+    </RelativeLayout>
+</LinearLayout>
